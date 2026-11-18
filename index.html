@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arlyn's Beach Resort — Beach, Pool &amp; Jacuzzi Getaway</title>
+<meta name="description" content="Arlyn's Beach Resort: private beach, swimming pool, jacuzzi, and comfortable overnight rooms. Book your stay online." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-loading">
+
+<!-- ============ NAV ============ -->
+<nav class="site-nav" id="site-nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">Arlyn's<span>.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#booking">Book Now</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</nav>
+
+<!-- Floating CTA — appears once the visitor scrolls past the hero -->
+<a href="#booking" class="float-cta" id="float-cta">Book Now</a>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="hero-bg" style="background-image:url('images/hero-resort.jpg');"></div>
+  <div class="container hero-content">
+    <span class="eyebrow">Katipunan &middot; Zamboanga del Norte</span>
+    <h1>Arlyn's Beach Resort</h1>
+    <p>A private stretch of shoreline, a pool for slow afternoons, a jacuzzi for quiet evenings, and rooms built for staying the night. Come let the tide set the pace.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn btn-primary">Check Availability</a>
+      <a href="#amenities" class="btn btn-outline">Explore the Resort</a>
+    </div>
+    <div class="hero-trust">
+      <span class="hero-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span>4.9 rating &middot; loved by 500+ guests &middot; book direct for the best rate</span>
+    </div>
+  </div>
+  <!-- Signature element: the tideline. Fills like an incoming tide as the visitor scrolls the hero. -->
+  <div class="tideline">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path class="tide-fill" d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,40 L1440,90 L0,90 Z"></path>
+    </svg>
+  </div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">Welcome</span>
+      <h2>A resort built around the water</h2>
+      <p>Arlyn's Beach Resort was made for people who want their vacation to have options: sand between your toes in the morning, a swim in the pool by noon, and a jacuzzi soak once the sun goes down. Our rooms building means the day doesn't have to end when the beach closes.</p>
+      <p>Whether you're here for a weekend or a longer escape, everything you need &mdash; beach, pool, jacuzzi, and a comfortable bed &mdash; is a short walk away.</p>
+      <div class="about-stats">
+        <div class="stat"><strong data-count="3">0</strong><span>Water features</span></div>
+        <div class="stat"><strong data-count="22">0</strong><span>Rooms on-site</span></div>
+        <div class="stat"><strong data-static="24/7">24/7</strong><span>Front desk support</span></div>
+      </div>
+    </div>
+    <div class="about-media reveal">
+      <img src="images/welcome-arch.jpg" alt="The welcome arch at the entrance of Arlyn's Beach Resort" style="object-position:50% 62%;" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ AMENITIES / GALLERY ============ -->
+<section class="amenities" id="amenities">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">What's here</span>
+      <h2>Beach, pool, jacuzzi, and a place to sleep it all off</h2>
+      <p>A look around Arlyn's Beach Resort &mdash; real photos of our beachfront, pool, jacuzzi, and rooms.</p>
+    </div>
+    <div class="amenity-grid" id="gallery-grid">
+      <div class="amenity-card reveal" data-lightbox-caption="Cottages along our beachfront" data-full="images/beachfront-cottages.jpg">
+        <img src="images/beachfront-cottages.jpg" alt="Blue-roofed cottages along the beachfront" />
+        <div class="amenity-label"><span class="eyebrow">01</span><strong>Beachfront Cottages</strong></div>
+      </div>
+      <div class="amenity-card reveal" data-lightbox-caption="Our dolphin fountain pool, open 8:00 AM to 5:00 PM" data-full="images/dolphin-pool.jpg">
+        <img src="images/dolphin-pool.jpg" alt="Dolphin fountain swimming pool" />
+        <div class="amenity-label"><span class="eyebrow">02</span><strong>Swimming Pool</strong></div>
+      </div>
+      <div class="amenity-card reveal" data-lightbox-caption="Jacuzzi deck with a view of the sea" data-full="images/jacuzzi-deck.jpg">
+        <img src="images/jacuzzi-deck.jpg" alt="Jacuzzi and pool deck facing the sea" />
+        <div class="amenity-label"><span class="eyebrow">03</span><strong>Jacuzzi Deck</strong></div>
+      </div>
+      <div class="amenity-card reveal" data-lightbox-caption="The rooms building" data-full="images/rooms-building.jpg">
+        <img src="images/rooms-building.jpg" alt="The rooms building" />
+        <div class="amenity-label"><span class="eyebrow">04</span><strong>Rooms Building</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROOMS ============ -->
+<section class="rooms" id="rooms">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Stay the night</span>
+      <h2>Rooms for every kind of trip</h2>
+      <p>All rooms are in our dedicated guest building, a short walk from the beach, pool, and jacuzzi.</p>
+    </div>
+    <div class="room-grid" id="room-grid">
+      <!-- room cards are injected by js/main.js from /api/rooms -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECIAL OFFER ============ -->
+<section class="offer-banner">
+  <div class="container offer-inner reveal">
+    <div class="offer-text">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.8);">Limited-time offer</span>
+      <h2>Stay 3 nights, the 4th is on us</h2>
+      <p>Valid for direct bookings made through this site for stays of 4 nights or longer. Mention the offer when you book and our team will apply it to your confirmation.</p>
+    </div>
+    <a href="#booking" class="btn btn-primary">Claim This Offer</a>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Guests say it best</span>
+      <h2>Stories from the shoreline</h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;We booked the Beachfront Suite for our anniversary and woke up to the tide practically at our balcony. The jacuzzi at night sealed the deal &mdash; already planning our next trip back.&rdquo;</p>
+        <div class="testimonial-author">
+          <div class="avatar">JR</div>
+          <div><strong>Jaymar R.</strong><span>Dumaguete City</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Brought the whole family and the kids didn't want to leave the pool. Front desk was helpful the entire stay and the Deluxe Room was spotless. Great value for what you get.&rdquo;</p>
+        <div class="testimonial-author">
+          <div class="avatar">MC</div>
+          <div><strong>Marites C.</strong><span>Zamboanga City</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Booking online was quick and the team confirmed within hours. The beach here is genuinely private &mdash; quiet, clean, and worth the drive from the city.&rdquo;</p>
+        <div class="testimonial-author">
+          <div class="avatar">EP</div>
+          <div><strong>Engr. Paolo D.</strong><span>Dipolog City</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Before you book</span>
+      <h2>Questions guests ask us most</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What time is check-in and check-out?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Check-in is from 2:00 PM and check-out is by 12:00 noon. Early check-in or late check-out can be requested when you book &mdash; just add it to the special requests field, and we'll confirm based on availability.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can I cancel or change my booking?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Yes. Cancellations made at least 48 hours before check-in are free of charge. To change your dates or room type, just reply to your booking confirmation email or reach us through the contact details below.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is the beach private to the resort?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Yes, our stretch of shoreline is reserved for overnight guests, so it stays quiet even during peak season.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you allow pets?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Small, well-behaved pets are welcome in select ground-floor rooms with advance notice. Let us know in your special requests so we can assign the right room.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do I know my booking is confirmed?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Every request starts as "pending" while our team checks it against availability. You'll get an email once it's confirmed, usually within a few hours.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="booking" id="booking">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Reserve your stay</span>
+      <h2>Book your room</h2>
+      <p>Pick your dates, check availability, and send us your request &mdash; our team confirms every booking by email.</p>
+    </div>
+    <div class="trust-strip reveal">
+      <span>&#10003; Free cancellation up to 48 hours before check-in</span>
+      <span>&#10003; Instant booking confirmation by email</span>
+      <span>&#10003; Best rate guaranteed when you book direct</span>
+    </div>
+    <div class="booking-panel reveal">
+      <form id="booking-form" novalidate>
+        <div class="form-grid">
+          <div class="full">
+            <label for="room_key">Room type</label>
+            <select id="room_key" name="room_key" required></select>
+          </div>
+
+          <div>
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required />
+          </div>
+          <div>
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout" name="checkout" required />
+          </div>
+
+          <div class="full availability-check">
+            <button type="button" class="btn btn-dark" id="check-availability-btn">Check availability</button>
+            <span id="availability-result"></span>
+          </div>
+
+          <div>
+            <label for="adults">Adults</label>
+            <input type="number" id="adults" name="adults" min="1" value="2" required />
+          </div>
+          <div>
+            <label for="children">Children</label>
+            <input type="number" id="children" name="children" min="0" value="0" />
+          </div>
+
+          <div>
+            <label for="guest_name">Full name</label>
+            <input type="text" id="guest_name" name="guest_name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="full">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div class="full">
+            <label for="special_requests">Special requests (optional)</label>
+            <textarea id="special_requests" name="special_requests" placeholder="Early check-in, extra towels, celebrating an occasion..."></textarea>
+          </div>
+
+          <div class="full">
+            <button type="submit" class="btn btn-primary btn-block">Request Booking</button>
+          </div>
+        </div>
+      </form>
+      <div id="booking-msg" class="booking-msg"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION / MAP ============ -->
+<section class="location" id="location">
+  <div class="container location-grid">
+    <div class="reveal">
+      <span class="eyebrow">Find us</span>
+      <h2>On the coast of Katipunan, Zamboanga del Norte</h2>
+      <p>Arlyn's Beach Resort sits on a quiet stretch of shoreline in Katipunan, Zamboanga del Norte. Follow the highway toward the coast and look for our signage near the barangay road turnoff.</p>
+      <ul class="location-details">
+        <li><strong>Address:</strong> Katipunan, Zamboanga del Norte, Philippines</li>
+        <li><strong>From Dipolog Airport:</strong> ~45 minutes by car</li>
+        <li><strong>Parking:</strong> Free on-site parking for all guests</li>
+      </ul>
+      <a href="https://www.google.com/maps/search/?api=1&query=Katipunan+Zamboanga+del+Norte" target="_blank" rel="noopener" class="btn btn-dark">Get Directions</a>
+    </div>
+    <div class="location-map reveal">
+      <iframe
+        title="Map to Arlyn's Beach Resort in Katipunan, Zamboanga del Norte"
+        src="https://www.google.com/maps?q=Katipunan,+Zamboanga+del+Norte,+Philippines&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER / CONTACT ============ -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Arlyn's<span>.</span></div>
+        <p style="opacity:.8; max-width:280px;">A beach, pool, and jacuzzi resort with overnight rooms in Katipunan, Zamboanga del Norte.</p>
+      </div>
+      <div>
+        <h4>Resort</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#rooms">Rooms &amp; Rates</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li>Katipunan, Zamboanga del Norte, Philippines</li>
+          <li>hello@arlynsbeachresort.com</li>
+          <li>+63 900 000 0000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Arlyn's Beach Resort. All rights reserved.</span>
+      <span>Sample photography for demo purposes.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CHATBOT WIDGET ============ -->
+<button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+</button>
+
+<div class="chatbot-panel" id="chatbot-panel">
+  <div class="chatbot-header">
+    <div>
+      <strong>Arlyn's Assistant</strong>
+      <span>Usually replies instantly</span>
+    </div>
+    <button class="chatbot-close" id="chatbot-close" aria-label="Close chat">&times;</button>
+  </div>
+  <div class="chatbot-messages" id="chatbot-messages"></div>
+  <div class="chat-quick-replies" id="chat-quick-replies"></div>
+  <form class="chatbot-input" id="chatbot-input-form">
+    <input type="text" id="chatbot-input" placeholder="Ask about rooms, rates, amenities..." autocomplete="off" />
+    <button type="submit" aria-label="Send">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"></path></svg>
+    </button>
+  </form>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous photo">&#10094;</button>
+  <img id="lightbox-img" src="" alt="" />
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+  <button class="lightbox-nav next" id="lightbox-next" aria-label="Next photo">&#10095;</button>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/booking.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
